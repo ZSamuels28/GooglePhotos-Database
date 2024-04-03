@@ -34,15 +34,27 @@ Install the required Python libraries by running: `pip install -r requirements.t
 1. Go to the Google Cloud Console.
 2. Create a new project.
 3. Navigate to the "APIs & Services > Dashboard" section.
-4. Click "+ ENABLE APIS AND SERVICES" and search for "Google Photos Library API".
-5. Enable the "Google Photos Library API" for your project.
+4. Click "+ ENABLE APIS AND SERVICES" and search for "Photos Library API".
+5. Enable the "Photos Library API" for your project.
 
 ### Step 4: Create Credentials
 1. In the Google Cloud Console, go to "APIs & Services > Credentials".
 2. Click "Create credentials" and select "OAuth client ID".
-3. Choose "Desktop app" as the application type.
-4. Enter a name for your OAuth 2.0 client and click "Create".
-5. Download the JSON file containing your client credentials.
+3. Click on "Configure Consent Screen"
+4. Select "External" and click "Create"
+5. Add the App Name (Note some app names will be denied by Google)
+6. Add your email under "User support email"
+7. Add your email under "Developer contact information"
+8. Click "Save and Continue"
+9. On the Scopes screen, click "Add or Remove Scopes"
+10. Filter the scopes by "Photo" and add all of the Photos Library API scopes
+11. Click "Save and Continue"
+12. On the Test Users screen, click "Add Users" and add your email
+13. Click "Save and Continue"
+14. Once created and back at the Dashboard click "Create credentials" and select "OAuth client ID".
+15. Choose "Desktop app" as the application type.
+16. Enter a name for your OAuth 2.0 client and click "Create".
+17. Download the JSON file containing your client credentials.
 
 ### Step 5: Configure Your Application
 
